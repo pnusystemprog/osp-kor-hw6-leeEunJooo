@@ -3,13 +3,13 @@
 #include "phone.h"
 #include <stdbool.h>
 
+extern int size;
 /*****************
 ** Your code..
 ** This function should be implemented in register.c
 *************************/
 void registerPhoneData()
 {
-    extern int size; 
     char password[10];
     bool isvalid = false;
     
@@ -37,7 +37,7 @@ void registerPhoneData()
     printf("PhoneNumber: ");
     scanf("%s", PhoneBook[size].PhoneNumber);
     printf("Registered...\n");
-    size++;
+    ++size;
     }
     else{
     printf("You are not allowed to cccees PhoneBook.");

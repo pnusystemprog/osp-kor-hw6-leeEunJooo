@@ -14,7 +14,7 @@ void searchByName()
 	scanf("%s", searchName);
 	for(int i = 0; i<size; i++){
 	    if(!strcmp(searchName,PhoneBook[i].Name)){
-		printf("%s \t %15s\n", searchName, PhoneBook[i].PhoneNumber);
+		printf("%s \t %13s\n", searchName, PhoneBook[i].PhoneNumber);
 		return;
 	    }
 	}
