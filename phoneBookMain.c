@@ -26,42 +26,8 @@ int main()
             case 3: searchByName(); break;
             case 4: deleteByName(); break;
 		}
-	} while (service != 5);	// if Exit is not entered, the loop continues
+	count_service++;
+} while (service != 5);	// if Exit is not entered, the loop continues
+printf("Total number of service request : %d", count_service);
 	return 0;
-}
-
-/*****************
-** Your code..
-** This function should be implemented in register.c
-*************************/
-void registerPhoneData()
-{
-    printf("Registration\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in search.c
-*************************/
-void printAll()
-{
-    printf("Print all contants in the PhoneBook\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in search.c
-*************************/
-void searchByName()
-{
-    printf("Search by Name\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in delete.c
-*************************/
-void deleteByName()
-{
-    printf("Deletion is done\n");
 }
